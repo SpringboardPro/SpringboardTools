@@ -18,8 +18,12 @@ if len(sys.argv) == 3 :
 #    print (match)
         if command in "Full" : 
             fullpath = fullpath.replace(match.group(0),"C:\\Users\\%username%\\Dropbox (Springboard)\\")
-        else :
+        elif command in "Partial" :
             fullpath = fullpath.replace(match.group(0),"Dropbox (Springboard)\\")
+        else :
+            print("Error: Command not supported")
+            intput()
+            exit()
         print (fullpath)
         r = Tk()
         r.withdraw()
