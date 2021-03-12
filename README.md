@@ -7,6 +7,7 @@ These tools add options to your right click context menu to:
 - Release upissue of file (rename to remove draft version number)
 
 Installation:
+- Install Python3 on your computer
 - Copy all files into a C:\Springboard folder 
 - Run generate_registry_file.py. This should generate a .reg registry file
 - Double click springboard_tools.reg and add the file to your computer's registry
