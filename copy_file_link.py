@@ -30,7 +30,8 @@ if len(sys.argv) == 3 :
             exit()
         clipboard(fullpath)
         print("Copied to clipboard")
+        input() # <- comment out this line to prevent the terminal opening
     
 else :
     print("Error: Incorrect number of arguements passed in")
-input()
+    input()
