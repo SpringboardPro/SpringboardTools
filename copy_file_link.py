@@ -21,7 +21,7 @@ if len(sys.argv) == 3 :
     else :
 #    print (match)
         if command in "Full" : 
-            fullpath = fullpath.replace(match.group(0),"C:\\Users\\%username%\\Dropbox (Springboard)\\")
+            fullpath = fullpath.replace(match.group(0),"C:\\Users\\^^%username^^%\\Dropbox (Springboard)\\")
         elif command in "Partial" :
             fullpath = fullpath.replace(match.group(0),"Dropbox (Springboard)\\")
         else :
