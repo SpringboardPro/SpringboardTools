@@ -3,14 +3,18 @@ import os;
 import re;
 import shutil;
 
-from tkinter import Tk
+def clipboard(text):
+    print(str(text))
+    cmd = 'echo | set /p nul=' + str(text) + '| clip'
+    os.system(cmd)
 
 if len(sys.argv) == 3 :
     fullpath = sys.argv[1]
     command = sys.argv[2]
-    print(fullpath)
+#    print(fullpath)
+#    print(command)
     match = re.search(r'C:\\Users\\[A-Za-z ]+\\Dropbox \(Springboard\)\\', fullpath)
-#    print(match)
+#    print(match.group(0))
     if (match == None) :
         print("Error: That does not look to be a file on dropbox")
         input()
@@ -24,14 +28,9 @@ if len(sys.argv) == 3 :
             print("Error: Command not supported")
             intput()
             exit()
-        print (fullpath)
-        r = Tk()
-        r.withdraw()
-        r.clipboard_clear()
-        r.clipboard_append(fullpath)
-        r.update() # now it stays on the clipboard after the window is closed
-        r.destroy()
+        clipboard(fullpath)
+        print("Copied to clipboard")
     
 else :
     print("Error: Incorrect number of arguements passed in")
-    input()
+input()
