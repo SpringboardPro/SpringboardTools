@@ -8,7 +8,7 @@ These tools add options to your right click context menu to:
 
 Installation:
 - Install Python3 on your computer
-- Copy all files into a C:\Springboard folder 
+- Copy all files into a folder e.g. C:\SpringboardTools
 - Run generate_registry_file.py. This should generate a .reg registry file
 - Double click springboard_tools.reg and add the file to your computer's registry
 
