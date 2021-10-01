@@ -13,3 +13,5 @@ Installation:
 - Double click springboard_tools.reg and add the file to your computer's registry
 
 Once installed, right click on a dropbox file and you should see a "Springboard" sub menu, with the various tool options in there.
+
+If you wish to suppress the terminal pop up when copying path names you can comment out the inidcated line in copy_file_link.py
