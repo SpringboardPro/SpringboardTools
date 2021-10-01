@@ -21,7 +21,7 @@ if len(sys.argv) == 3 :
     else :
 #    print (match)
         if command in "Full" : 
-            fullpath = fullpath.replace(match.group(0),"C:\\Users\\%username%\\Dropbox (Springboard)\\")
+            fullpath = fullpath.replace(match.group(0),"C:\\Users\\^^%username^^%\\Dropbox (Springboard)\\")
         elif command in "Partial" :
             fullpath = fullpath.replace(match.group(0),"Dropbox (Springboard)\\")
         else :
@@ -30,7 +30,8 @@ if len(sys.argv) == 3 :
             exit()
         clipboard(fullpath)
         print("Copied to clipboard")
+        input() # <- comment out this line to prevent the terminal opening
     
 else :
     print("Error: Incorrect number of arguements passed in")
-input()
+    input()

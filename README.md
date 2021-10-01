@@ -8,8 +8,10 @@ These tools add options to your right click context menu to:
 
 Installation:
 - Install Python3 on your computer
-- Copy all files into a C:\Springboard folder 
+- Copy all files into a folder e.g. C:\SpringboardTools
 - Run generate_registry_file.py. This should generate a .reg registry file
 - Double click springboard_tools.reg and add the file to your computer's registry
 
 Once installed, right click on a dropbox file and you should see a "Springboard" sub menu, with the various tool options in there.
+
+If you wish to suppress the terminal pop up when copying path names you can comment out the inidcated line in copy_file_link.py
