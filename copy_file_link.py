@@ -26,7 +26,7 @@ if len(sys.argv) == 3 :
             fullpath = fullpath.replace(match.group(0),"Dropbox (Springboard)\\")
         else :
             print("Error: Command not supported")
-            intput()
+            input()
             exit()
         clipboard(fullpath)
         print("Copied to clipboard")
