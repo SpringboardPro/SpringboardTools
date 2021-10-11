@@ -24,6 +24,10 @@ if len(sys.argv) == 3:
             full_path = full_path.replace(match.group(0), "C:\\Users\\^^^%username^^^%\\Dropbox (Springboard)\\")
         elif command in "Partial":
             full_path = full_path.replace(match.group(0), "Dropbox (Springboard)\\")
+        elif command in "Dir_Full":
+            full_path = full_path.replace(match.group(0), "C:\\Users\\^^^%username^^^%\\Dropbox (Springboard)\\")
+        elif command in "Dir_Partial":
+            full_path = full_path.replace(match.group(0), "Dropbox (Springboard)\\")
         else:
             print("Error: Command not supported")
             input()
