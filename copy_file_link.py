@@ -14,6 +14,7 @@ def clipboard(text):
 
 if len(sys.argv) == 3:
     full_path = sys.argv[1]
+    full_path = full_path.replace('/', '\\')
     command = sys.argv[2]
     match = re.search(r"C:\\Users\\[A-Za-z ]+\\Dropbox \(Springboard\)\\", full_path)
     if match is None:
