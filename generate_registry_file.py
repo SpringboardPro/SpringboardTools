@@ -88,4 +88,19 @@ f.write(r'"Icon"="%s\\SpringboardLogo.ico"' % (script_dir.replace("\\", "\\\\"))
 
 f.close()
 
+# Uninstall File
+f = open("Uninstall_springboard_tools.reg", "w")
+f.write(r'Windows Registry Editor Version 5.00')
+f.write('\n\n')
+# Adds keys for files
+f.write(r'[-HKEY_CLASSES_ROOT\*\springboard_sub_menu]')
+f.write('\n\n')
+f.write(r'[-HKEY_CLASSES_ROOT\*\shell\springboard_anchor]')
+f.write('\n\n')
+f.write(r'[-HKEY_CLASSES_ROOT\Directory\springboard_dir_sub_menu]')
+f.write('\n\n')
+f.write(r'[-HKEY_CLASSES_ROOT\Directory\shell\springboard_dir_anchor]')
+
+f.close()
+
 input()
