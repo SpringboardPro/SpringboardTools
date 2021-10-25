@@ -31,7 +31,7 @@ if len(sys.argv) == 3:
             exit()
         clipboard(full_path)
         print("Copied to clipboard")
-        input()  # <- comment out this line to prevent the terminal opening
+        # input()  # <- comment out this line to prevent the terminal opening
 
 else:
     print("Error: Incorrect number of arguments passed in")
