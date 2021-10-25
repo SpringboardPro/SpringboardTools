@@ -19,6 +19,13 @@ The keys added in the registry run the .py scripts in your SpringboardTools fold
 as an argument. If you want to edit or add to the functionality of the tools you can simply edit those python scripts.
 
 
+Uninstallation:
+- Double click "Uninstall_springboard_tools.reg". This will remove the Springboard sub menu from your right click.
+- Delete your copy of the Springboard Tools folder.
+
+
+
+Help:
 1. (The .py file may automatically be run by python, or it might open with your chosen IDE. 
   In the latter case you can run the script from your IDE. If the file opens in a simple text editor such as notepad, 
   you will have to select 'open with' and then pick python. If python is not an option you will have to find the 
